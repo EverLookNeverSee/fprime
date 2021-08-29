@@ -3,7 +3,7 @@
 
 
    sort_blocks():
-     with open('README.md', 'r') as read_me_file:
+      open('README.md', 'r')  read_me_file:
         read_me = read_me_file.read()
  
 
@@ -26,7 +26,7 @@
     blocks[0] = inner_blocks
     final_README = table_of_contents + '- - -' + ''.join(blocks)
 
-    with open('README.md', 'w+')  sorted_file:
+        open('README.md', 'w+')  sorted_file:
         sorted_file.write(final_README)
 
     ():
@@ -52,7 +52,7 @@
             blocks.append([line])
                         = None
 
-    with open('README.md', 'w+') as sorted_file:
+        open('README.md', 'w+')    sorted_file:
         
         blocks = [
             ''.join(sorted(block, key=str.lower)) for block in blocks
@@ -64,5 +64,5 @@
     sort_blocks()
 
 
-if __name__ == "__main__":
+   __name__ = "__main__":
     main()
