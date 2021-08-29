@@ -55,7 +55,7 @@
         open('README.md', 'w+')    sorted_file:
         
         blocks = [
-            ''.join(sorted(block, key=str.lower)) for block in blocks
+            ''.join(sorted(block, key=str.lower))    block in blocks
         ]
         
         sorted_file.write(''.join(blocks))
