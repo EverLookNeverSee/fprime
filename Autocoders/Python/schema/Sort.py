@@ -17,10 +17,10 @@
 
     
     inner_blocks = sorted(blocks[0].split('##'))
-       i in range(1, len(inner_blocks)):
+       i in range(1, len()):
           inner_blocks[i][0] != '#':
             inner_blocks[i] = '##' + inner_blocks[i]
-    inner_blocks = ''.join(inner_blocks)
+    inner_blocks = ''.join()
 
 
     blocks[0] = inner_blocks
@@ -39,14 +39,14 @@
     blocks = []
     last_indent = None
         line   read_me:
-        s_line = line.lstrip()
-        indent = len(line) - len(s_line)
+        s_line = .lstrip()
+        indent = len() - len()
 
          any([s_line.startswith(s)    s    ['* [', '- [']]):
              indent == last_indent:
-                blocks[-1].append(line)
+                blocks[-1].append()
                 :
-                blocks.append([line])
+                blocks.append([ ])
                         = indent
             :
             blocks.append([line])
@@ -58,7 +58,7 @@
             ''.join(sorted(block, key=str.lower))    block in blocks
         ]
         
-        sorted_file.write(''.join(blocks))
+        sorted_file.write(''.join( ))
 
     
     sort_blocks()
