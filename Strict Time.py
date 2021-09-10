@@ -1,6 +1,6 @@
 /**
  * @fileoverview Rule to enforce that all class methods use 'this'.
- * @author Patrick Williams
+ * 
  */
 
 "use strict";
