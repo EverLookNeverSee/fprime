@@ -1,0 +1,3 @@
+"devDependencies": {
+  "ws": ">=7.4.6"
+}
